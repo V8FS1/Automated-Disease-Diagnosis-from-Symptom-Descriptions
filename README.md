@@ -34,12 +34,12 @@ The system is deployed in a **web interface**, making it accessible for **teleme
 
 ## 📄 Understanding 24-Disease.json
 The file 24-Disease.json contains detailed information for each of the 24 diseases the model can predict. It includes:
-    • name → Disease name (e.g., “Acne”, “Diabetes”).
-    • description → A brief overview of the disease.
-    • homeCare → Self-care and home remedies.
-    • medications → Recommended medications and their common side effects.
-    • lifestyle → Lifestyle tips to manage or prevent the disease.
-    • whenToSeeDoctor → Guidelines on when to seek professional medical attention.
+    - name → Disease name (e.g., “Acne”, “Diabetes”).
+    - description → A brief overview of the disease.
+    - homeCare → Self-care and home remedies.
+    - medications → Recommended medications and their common side effects.
+    - lifestyle → Lifestyle tips to manage or prevent the disease.
+    - whenToSeeDoctor → Guidelines on when to seek professional medical attention.
 The web interface uses this JSON file to display detailed disease information after a prediction. This allows the system to not only identify the disease but also provide educational and actionable guidance for users.
 ---
 
