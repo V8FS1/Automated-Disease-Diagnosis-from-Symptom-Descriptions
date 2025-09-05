@@ -53,9 +53,9 @@ The system is deployed in a **web interface**, making it accessible for **teleme
    ```
 
 2. Create a virtual environment and install dependencies
-Option A — Python venv (recommended)
+   Option A — Python venv (recommended)
 
-macOS / Linux
+   macOS / Linux
    ```bash
    # from the project root
    python3 -m venv .venv
@@ -63,8 +63,8 @@ macOS / Linux
    python -m pip install --upgrade pip
    pip install -r requirements.txt
    ```
-Windows (PowerShell)
- ```bash
+   Windows (PowerShell)
+   ```bash
    # from the project root
    python -m venv .venv
    .venv\Scripts\Activate
@@ -73,11 +73,10 @@ Windows (PowerShell)
 
    ```
 3) Database Setup
- ```bash
-python manage.py migrate
- ```
+   ```bash
+   python manage.py migrate
+   ```
 3. Launch the Development Server:
-
    ```bash
    python manage.py runserver
    ```
