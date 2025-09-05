@@ -1,4 +1,4 @@
-# 🩺 Automated Disease Diagnosis from Symptom Descriptions
+# 🩺 Automated Disease Diagnosis from Symptom Descriptions Using NLP Techniques
 
 ## 📌 Project Overview
 This project presents an **AI-powered system for predicting diseases** from **free-text, patient-style symptom descriptions** using advanced **Natural Language Processing (NLP)** techniques.  
