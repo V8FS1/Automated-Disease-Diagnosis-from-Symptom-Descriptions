@@ -1,0 +1,50 @@
+# 🩺 Automated Disease Diagnosis from Symptom Descriptions
+
+## 📌 Project Overview
+This project presents an **AI-powered system for predicting diseases** from **free-text, patient-style symptom descriptions** using advanced **Natural Language Processing (NLP)** techniques.  
+Unlike traditional models that rely on structured or short-text inputs, this system is designed to understand **real-world, unstructured patient language** and provide accurate predictions across **24 disease categories**.
+
+The final pipeline integrates **transformer-based models (BERT, ClinicalBERT, BioBERT, RoBERTa)**, **Named Entity Recognition (NER)**, and **data augmentation using LLMs**, achieving:
+
+- ✅ **95% test accuracy**  
+- ✅ **96% validation accuracy**  
+- ✅ **100% Top-3 accuracy on real-world simulated patient cases**
+
+The system is deployed in a **web interface**, making it accessible for **telemedicine and patient-facing applications**.
+
+---
+
+## 🚀 Features
+- 📝 **Free-text symptom input** → handles unstructured, natural patient descriptions.  
+- 🤖 **Transformer-based classification** → fine-tuned BERT, BioBERT, ClinicalBERT, PubMedBERT, and RoBERTa models.  
+- 🔍 **NER-enhanced predictions** → integrates biomedical entities for improved robustness.  
+- 🧠 **Data augmentation with LLMs** → expanded dataset with 240+ clinically validated symptom variations.  
+- 🌐 **Web deployment** → real-time predictions with disease summaries and follow-up guidance.  
+
+---
+
+## 🛠️ Tech Stack
+- **Programming**: Python  
+- **Libraries/Frameworks**: Hugging Face Transformers, TensorFlow, Scikit-learn, SpaCy, SciSpacy, Pandas, NumPy  
+- **Models**: BERT, ClinicalBERT, BioBERT, PubMedBERT, RoBERTa  
+- **Deployment**: Flask/Django + Web Interface  
+- **Version Control**: Git/GitHub  
+
+---
+
+## 📂 Project Structure
+```bash
+├── Dataset(Before Expanding)/  # Dataset (Symptom2Disease)  
+├── model/               # Fine-tuned transformer models  
+├── MedicalAi/             # Deployment files (Flask/Django app)  
+├── MedicalAi/requirements.txt     # Dependencies  
+├── README.md            # Project documentation  
+
+
+## ⚙️ Installation & Setup
+
+Clone the repository:
+git clone https://github.com/V8FS1/Multi-Disease-Prediction-System.git
+cd disease-diagnosis-nlp
+
+
