@@ -1,0 +1,12 @@
+db.sqlite3
+__pycache__
+src/staticfiles
+.idea
+*.pyc
+src/logs
+.venv
+# Python cache files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/

@@ -1,0 +1,178 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic Detection Test</title>
+    <link rel="stylesheet" href="{% static 'chat/css/styles.css' %}">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        h1 {
+            color: #3b82f6;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2563eb;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            min-height: 100px;
+        }
+        .topic-container {
+            margin-top: 10px;
+            border-left: 4px solid #3b82f6;
+            padding-left: 15px;
+        }
+        .topic-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .topic-content {
+            margin-bottom: 15px;
+        }
+        .sources-label {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .source-link {
+            color: #3b82f6;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .source-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Topic Detection Test</h1>
+        <p>Enter a health topic to test if it matches one of our predefined topics.</p>
+        
+        <div class="form-group">
+            <label for="topicInput">Health Topic:</label>
+            <input type="text" id="topicInput" placeholder="e.g., When is a fever considered serious in adults?">
+        </div>
+        
+        <button id="checkButton">Check for Topic Match</button>
+        
+        <div id="result">
+            <p>Result will appear here...</p>
+        </div>
+
+        <div class="mt-5">
+            <h2 class="text-lg font-bold mb-2">Available Topics:</h2>
+            <ul id="availableTopics" class="list-disc pl-5">
+                <!-- Topics will be loaded here -->
+            </ul>
+        </div>
+    </div>
+
+    <a href="/chat/welcome/" class="flex items-center">
+    <a href="/chat/signin/" class="block px-4 py-2 text-sm text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-[#252526] transition-colors duration-200 hover:text-blue-600 dark:hover:text-blue-400">
+    <a href="/chat/index/" class="block px-4 py-2 text-sm text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-[#252526] transition-colors duration-200 hover:text-blue-600 dark:hover:text-blue-400">
+    <a href="/chat/" id="new-chat-button" class="text-gray-700 dark:text-white ...">
+    <a href="/chat/faq/" ...>
+
+    <img src="{% static 'chat/images/logo.png' %}" ...>
+
+    <script src="{% static 'chat/js/main.js' %}"></script>
+    <script src="{% static 'chat/js/chat.js' %}"></script>
+    <script src="{% static 'chat/js/topic-matcher.js' %}"></script>
+    <script src="{% static 'chat/js/clinexa.js' %}"></script>
+    <script src="{% static 'chat/js/topic-handler.js' %}"></script>
+    <script src="{% static 'chat/js/search.js' %}"></script>
+    <script src="{% static 'chat/js/settings.js' %}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load available topics
+            loadTopics().then(topics => {
+                const topicsList = document.getElementById('availableTopics');
+                topicsList.innerHTML = '';
+                
+                topics.forEach(topic => {
+                    const li = document.createElement('li');
+                    li.textContent = topic.title;
+                    li.className = 'mb-1 cursor-pointer hover:text-blue-600';
+                    li.addEventListener('click', () => {
+                        document.getElementById('topicInput').value = topic.title;
+                    });
+                    topicsList.appendChild(li);
+                });
+            });
+            
+            // Add event listener to the check button
+            document.getElementById('checkButton').addEventListener('click', async function() {
+                const input = document.getElementById('topicInput').value.trim();
+                const resultDiv = document.getElementById('result');
+                
+                if (!input) {
+                    resultDiv.innerHTML = '<p class="text-red-500">Please enter a topic to check.</p>';
+                    return;
+                }
+                
+                resultDiv.innerHTML = '<p>Checking...</p>';
+                
+                try {
+                    const matchedTopic = await matchTopicByTitle(input);
+                    
+                    if (matchedTopic) {
+                        resultDiv.innerHTML = `
+                            <p class="text-green-600 mb-4">✅ Topic match found!</p>
+                            ${formatTopicResponse(matchedTopic)}
+                        `;
+                    } else {
+                        resultDiv.innerHTML = `
+                            <p class="text-red-500">❌ No matching topic found.</p>
+                            <p class="mt-2">Try one of the topics from the list below.</p>
+                        `;
+                    }
+                } catch (error) {
+                    resultDiv.innerHTML = `
+                        <p class="text-red-500">Error checking topic: ${error.message}</p>
+                    `;
+                }
+            });
+        });
+    </script>
+</body>
+</html>

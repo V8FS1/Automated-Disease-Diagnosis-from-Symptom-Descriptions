@@ -1,0 +1,203 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare - Sign In</title>
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{% static 'chat/css/styles.css' %}">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4F46E5',
+                        secondary: '#6B7280',
+                    },
+                    borderRadius: {
+                        'xl': '1rem',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-200 dark:bg-[#2b2b2b] min-h-screen flex items-center justify-center">
+    <div class="w-full max-w-4xl mx-auto bg-[#F7F8FA] dark:bg-[#252526] rounded-xl overflow-hidden shadow-lg">
+        <div class="flex flex-col md:flex-row">
+            <!-- Left side with logo and tagline -->
+            <div class="bg-white dark:bg-[#1e1e1e] p-8 flex flex-col items-center justify-center text-center md:w-2/5">
+                <div class="mb-6">
+                    <a href="/chat/welcome/" class="flex items-center">
+                        <img src="{% static 'chat/images/logo.png' %}" alt="Clinexa Logo" class="h-20 w-auto logo-filter">
+                    </a>
+                </div>
+                <h2 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Where smart technology meets human care—welcome to Clinexa.</h2>
+            </div>
+            
+            <!-- Right side with sign in form -->
+            <div class="p-8 md:w-3/5 bg-white dark:bg-[#252526]">
+                
+                <h1 class="text-2xl font-bold text-gray-800 dark:text-white mb-6">Sign In</h1>
+                
+                <div class="flex space-x-4 mb-6">
+                
+                <!-- Sign in with Google button -->
+                <button class="flex-1 flex items-center justify-center bg-white border border-gray-300 rounded-md py-2 px-4 text-sm text-gray-700 hover:bg-gray-50 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-600 dark:bg-[#4e4e4e] dark:border-gray-600 dark:text-white dark:hover:bg-gray-600 dark:focus-visible:ring-indigo-400">
+                    <img src="https://www.google.com/favicon.ico" alt="Google" class="w-5 h-5 mr-2">
+                    Sign in with Google
+                </button>
+                <!-- Sign in with Facebook button -->
+                <button class="flex-1 flex items-center justify-center bg-white border border-gray-300 rounded-md py-2 px-4 text-sm text-gray-700 hover:bg-gray-50 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-600 dark:bg-[#4e4e4e] dark:border-gray-600 dark:text-white dark:hover:bg-gray-600 dark:focus-visible:ring-indigo-400">
+                    <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" fill="#4F46E5"/>
+                    </svg>
+                    Sign in with Facebook
+                </button>
+                </div>
+                
+                <div class="relative flex items-center justify-center my-6">
+                    <div class="border-t border-gray-300 dark:border-white w-full"></div>
+                    <div class="absolute bg-white px-4 text-sm text-gray-500 select-none dark:bg-[#252526] dark:text-white">-OR-</div>
+                </div>
+                
+                <form id="signin-form" class="space-y-4">
+                    <div>
+                        <label for="username_or_email" class="block text-sm font-medium text-gray-700 dark:text-white mb-1">Username:</label>
+                        <input type="text" id="username_or_email" name="username_or_email" required
+                            class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm placeholder-gray-400 dark:placeholder-gray-500 bg-white dark:bg-[#2d2d2d] text-gray-900 dark:text-gray-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-600 dark:focus-visible:ring-indigo-400 input-focus-ring"
+                            placeholder="Enter your username">
+                    </div>
+                    
+                    <div>
+                        <label for="password" class="block text-sm font-medium text-gray-700 dark:text-white mb-1">Password:</label>
+                        <div class="relative">
+                            <input type="password" id="password" name="password" required
+                                class="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm placeholder-gray-400 dark:placeholder-gray-500 bg-white dark:bg-[#2d2d2d] text-gray-900 dark:text-gray-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-600 dark:focus-visible:ring-indigo-400 input-focus-ring"
+                                placeholder="Enter your password">
+                            <button type="button" id="togglePassword" class="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 dark:text-gray-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-600 dark:focus-visible:ring-indigo-400 rounded-full p-1">
+                                <svg id="eyeIcon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                                    <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                                </svg>
+                                <svg id="eyeOffIcon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M3.707 2.293a1 1 0 00-1.414 1.414l14 14a1 1 0 001.414-1.414l-1.473-1.473A10.014 10.014 0 0019.542 10C18.268 5.943 14.478 3 10 3a9.958 9.958 0 00-4.512 1.074l-1.78-1.781zm4.261 4.26l1.514 1.515a2.003 2.003 0 012.45 2.45l1.514 1.514a4 4 0 00-5.478-5.478z" clip-rule="evenodd" />
+                                    <path d="M12.454 16.697L9.75 13.992a4 4 0 01-3.742-3.741L2.335 6.578A9.98 9.98 0 00.458 10c1.274 4.057 5.065 7 9.542 7 .847 0 1.669-.105 2.454-.303z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 text-indigo-600 focus-visible:ring-indigo-500 border-gray-300 rounded focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-500 dark:focus-visible:ring-indigo-400">
+                            <label for="remember-me" class="ml-2 block text-sm text-gray-700 dark:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-600 dark:focus-visible:ring-indigo-400">
+                                Remember me
+                            </label>
+                        </div>
+                        
+                        <div class="text-sm">
+                            <a href="#" class="text-gray-900 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-600 rounded dark:text-white dark:focus-visible:ring-indigo-400">
+                                Forgot password?
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div id="login-error" class="text-red-500 text-sm mb-2" style="display:none;"></div>
+                    
+                    <div>
+                        <button type="submit" class="w-full bg-[#1e1e1e] hover:bg-gray-900 text-white font-medium py-2 px-4 rounded-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-white transition-colors dark:bg-[#4e4e4e] dark:hover:bg-[#5e5e5e] dark:focus-visible:ring-gray-200">
+                            Sign In
+                        </button>
+                        <button onclick="window.location.href='/chat/welcome/'" type="button" class="w-full mt-3 flex items-center justify-center border border-gray-300 bg-[#4f4e4e] text-white font-medium py-2 px-4 rounded-md transition-colors hover:bg-[#5e5d5d] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-600 dark:bg-[#8f8e8e] dark:border-[#4b4b4b] dark:text-white dark:hover:bg-[#9e9e9e] dark:focus-visible:ring-indigo-400">
+                            <svg class="w-5 h-5 mr-2 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12h8M8 12l-4-4m4 4l-4 4"/></svg>
+                            Continue as Guest
+                        </button>
+                    </div>
+                </form>
+                
+                <div class="mt-4 text-center text-sm text-gray-600 dark:text-gray-400">
+                    Don't have an account? <a href="/chat/index/" class="text-gray-900 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-indigo-600 rounded dark:text-white">Sign up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="{% static 'chat/js/focus-manager.js' %}"></script>
+    <script src="{% static 'chat/js/main.js' %}"></script>
+    <script src="{% static 'chat/js/chat.js' %}"></script>
+    <script src="{% static 'chat/js/topic-matcher.js' %}"></script>
+    <script src="{% static 'chat/js/clinexa.js' %}"></script>
+    <script src="{% static 'chat/js/topic-handler.js' %}"></script>
+    <script src="{% static 'chat/js/search.js' %}"></script>
+    <script src="{% static 'chat/js/settings.js' %}"></script>
+    
+    <!-- Dark mode toggle button -->
+    <button id="dark-mode-toggle" class="focus:outline-none">
+        <div class="light">
+            <div class="wire"></div>
+            <div class="bulb">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </button>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const signinForm = document.getElementById('signin-form');
+        const loginError = document.getElementById('login-error');
+
+        if (signinForm) {
+            signinForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                loginError.style.display = 'none';
+
+                const username = document.getElementById('username_or_email').value.trim();
+                const password = document.getElementById('password').value;
+
+                if (!username || !password) {
+                    loginError.textContent = 'Please enter both a username and password.';
+                    loginError.style.display = 'block';
+                    return;
+                }
+
+                try {
+                    const response = await fetch('/api/login/', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-CSRFToken': '{{ csrf_token }}' // Important for Django POST requests
+                        },
+                        body: JSON.stringify({ username: username, password: password })
+                    });
+
+                    if (response.ok) {
+                        const data = await response.json();
+                        if (data.token) {
+                            localStorage.setItem('authToken', data.token);
+                            localStorage.setItem('username', username);
+                            window.location.href = '/chat/welcome/';
+                        } else {
+                            loginError.textContent = 'Login successful, but no token was received.';
+                            loginError.style.display = 'block';
+                        }
+                    } else {
+                        const errorData = await response.json();
+                        loginError.textContent = errorData.error || 'Invalid credentials. Please try again.';
+                        loginError.style.display = 'block';
+                    }
+                } catch (error) {
+                    console.error('Login error:', error);
+                    loginError.textContent = 'An error occurred while trying to sign in. Please check your connection.';
+                    loginError.style.display = 'block';
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

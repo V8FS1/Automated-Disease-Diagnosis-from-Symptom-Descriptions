@@ -1,0 +1,432 @@
+/* Clinexa Color Variables */
+:root {
+    /* Light Mode Colors */
+    --primary-bg: #F7F8FA; /* Main background */
+    --secondary-bg: #FFFFFF; /* Cards, inputs background */
+    --primary-text: #1F1F1F; /* Headings, primary text */
+    --secondary-text: #4B5563; /* Labels, secondary text */
+    --muted-text: #6B7280; /* Muted/informational text */
+    --primary-btn: #1F2937; /* Button background */
+    --primary-btn-hover: #374151; /* Button hover state */
+    --sidebar-bg: #FFFFFF; /* Sidebar background */
+    --sidebar-text: #1F1F1F; /* Sidebar text */
+    --sidebar-hover: #F3F4F6; /* Sidebar hover state */
+    --input-bg: #FFFFFF; /* Input background */
+    --input-text: #1F1F1F; /* Input text */
+    --placeholder-text: #9CA3AF; /* Placeholder text */
+    --border-color: #E5E7EB; /* Border color */
+    --success: #059669; /* Success color */
+    --warning: #F59E0B; /* Warning color */
+    --danger: #DC2626; /* Danger color */
+    --modal-bg: #FFFFFF; /* Modal background */
+    
+    /* Dark Mode Colors */
+    --dark-primary-bg: #252526; /* Main page and top bar */
+    --dark-secondary-bg: #252526; /* Cards, inputs background dark */
+    --dark-primary-text: rgb(255, 255, 255); /* All texts */
+    --dark-secondary-text: rgb(255, 255, 255); /* Labels, secondary text */
+    --dark-muted-text: rgb(255, 255, 255); /* Muted/informational text */
+    --dark-sidebar-bg: #1e1e1e; /* Sidebar background */
+    --dark-sidebar-text: rgb(255, 255, 255); /* Sidebar text */
+    --dark-sidebar-hover: #252526; /* Sidebar hover state */
+    --dark-input-bg: #252526; /* Input background dark */
+    --dark-input-text: rgb(255, 255, 255); /* Input text dark */
+    --dark-placeholder-text: rgb(255, 255, 255); /* Placeholder text */
+    --dark-border-color: #252526; /* Border color dark */
+    --dark-modal-bg: #252526; /* Modal background */
+}
+
+/* Custom styles beyond Tailwind */
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+}
+
+.stethoscope-icon {
+  filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.5));
+}
+
+.message-transition {
+  transition: all 0.3s ease;
+}
+
+.input-focus-ring:focus {
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+/* Chat input styles */
+.chat-input {
+    border-radius: 0.75rem;
+    background-color: var(--input-bg);
+    transition: all 0.2s ease;
+    border: 1px solid var(--border-color);
+    color: var(--input-text);
+}
+
+.chat-input:focus, .chat-input:hover {
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    border-color: var(--border-color);
+}
+
+.chat-input::placeholder {
+    color: var(--placeholder-text);
+}
+
+/* Message input textarea auto-resize */
+textarea#message-input {
+    min-height: 44px;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #5d5d5d;
+}
+
+/* Button hover effects */
+button[type="submit"] {
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    transform: scale(1.05);
+}
+
+/* Custom scrollbar - ChatGPT style */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9CA3AF;
+}
+
+/* Animation for new messages */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.new-message {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* Light bulb toggle styles */
+#dark-mode-toggle {
+  position: fixed;
+  top: 4rem; /* Position below the top bar */
+  right: 1.5rem; /* Moved slightly to the left (increased right margin) */
+  width: 25px; /* Smaller width */
+  height: 40px; /* Smaller height */
+  background: transparent;
+  border: none;
+  z-index: 200;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.light {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.wire {
+  position: relative;
+  display: block; /* Show wire for hanging effect */
+  width: 1px; /* Thin wire */
+  height: 30px; /* Longer wire */
+  background-color: #333;
+  margin-bottom: 0;
+}
+
+/* Add slight swing animation */
+@keyframes gentleSwing {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(1deg); }
+  100% { transform: rotate(0deg); }
+}
+
+#dark-mode-toggle:hover .light {
+  animation: gentleSwing 2s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+.bulb {
+  position: relative;
+  width: 20px; /* Smaller bulb */
+  height: 20px; /* Smaller bulb */
+  background-color: #444444;
+  border-radius: 100%;
+  z-index: 200;
+}
+
+.bulb::before {
+  content: '';
+  position: absolute;
+  top: -10px; /* Adjusted for smaller size */
+  left: 5px; /* Adjusted for smaller size */
+  width: 10px; /* Smaller connector */
+  height: 14px; /* Smaller connector */
+  background-color: #444444;
+  border-radius: 3px;
+  z-index: 300;
+  border-top: 6px solid #222; /* Smaller top */
+}
+
+/* Light mode = OFF */
+.bulb {
+  background-color: #777777; /* Lighter gray color */
+  border-radius: 100%;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1); /* Very subtle glow */
+}
+
+.bulb::before {
+  background-color: #777777; /* Lighter gray color */
+}
+
+.bulb::after {
+  display: none;
+}
+
+/* Dark mode = ON */
+.dark .bulb {
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #fff, 0 0 25px #fff;
+  z-index: 2;
+}
+
+.dark .bulb::before {
+  background-color: #fff;
+}
+
+.dark .bulb::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  filter: blur(15px);
+}
+
+/* Sidebar styles */
+.sidebar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 50;
+    width: 260px; /* Fixed width for sidebar */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.sidebar-container.visible {
+    transform: translateX(0);
+}
+
+.sidebar {
+    background-color: var(--sidebar-bg);
+    color: var(--sidebar-text);
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    padding-top: 6px; /* Add padding to align with top header */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark .sidebar {
+    background-color: #1e1e1e !important;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Sidebar buttons styling */
+.sidebar a, .sidebar button {
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* .sidebar a:hover, .sidebar button:hover {
+    background-color: var(--sidebar-hover);
+} */
+
+
+
+.dark .sidebar a:hover, .dark .sidebar button:hover {
+    background-color: #252526 !important;
+}
+
+/* Remove all borders in sidebar */
+.sidebar * {
+    border: none !important;
+}
+
+/* No overlay for sidebar - ChatGPT style */
+.sidebar-overlay {
+    display: none; /* Remove overlay completely */
+}
+
+/* Main content adjustments */
+.main-content {
+    width: 100%;
+    transition: margin-left 0.3s ease;
+}
+
+/* When sidebar is visible on larger screens */
+@media (min-width: 768px) {
+    .main-content.sidebar-visible {
+        margin-left: 260px; /* Same as sidebar width */
+    }
+}
+
+/* Search and new chat buttons */
+#search-button, #new-chat-button, #sidebar-toggle-inside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 64px; /* Match the height of the top header */
+}
+
+#search-button.hidden, #new-chat-button.hidden {
+  display: none;
+}
+
+/* Ensure SVG icons are centered */
+#search-button svg, #new-chat-button svg, #sidebar-toggle-inside svg, #sidebar-toggle svg {
+  margin: 0 auto;
+}
+
+/* Sidebar toggle button */
+.sidebar-toggle {
+  transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  height: 64px; /* Match the height of the top header (h-16 = 64px) */
+}
+
+.sidebar-toggle:hover {
+  transform: scale(1.1);
+}
+
+.sidebar-toggle.active {
+  transform: rotate(180deg);
+}
+
+/* Sidebar transition */
+.sidebar-hidden {
+  transform: translateX(-100%);
+}
+
+/* Profile dropdown */
+.profile-dropdown {
+  transform-origin: top right;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  transform: scale(0.95);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.profile-dropdown.active {
+  transform: scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* User and AI message styling */
+/* User message styling - bubble style with rounded corners */
+.user-message {
+  background-color: #f1f1f1;
+  border-radius: 1rem;
+  padding: 0.75rem 1rem;
+  max-width: 80%;
+  margin-left: auto; /* Push to the right */
+}
+
+/* AI message styling - plain text without container */
+.ai-message {
+  background-color: transparent;
+  color: #111; /* Dark gray in light mode */
+  padding: 0.75rem 0;
+  max-width: 90%;
+  line-height: 1.5;
+}
+
+/* Dark mode styles */
+.dark .user-message {
+  background-color: #454444;
+  color: #ffffff;
+}
+
+.dark .ai-message {
+  background-color: transparent;
+  color: #ffffff; /* White text in dark mode */
+}
+
+/* Message spacing */
+.new-message {
+  margin-bottom: 1.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sticky {
+  background-color: transparent !important;
+}
+
+/* Logo filter for dark mode */
+.dark .logo-filter {
+  filter: brightness(0) invert(1); /* Makes the logo white in dark mode */
+}
+
+/* Submit button states in dark mode */
+.dark .submit-btn {
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.dark .submit-btn:disabled {
+  background-color: #424345 !important;
+  opacity: 1;
+}
+
+.dark .submit-btn:not(:disabled) {
+  background-color: #FFFFFF !important;
+}
+
+/* Arrow icon color in dark mode */
+.dark .submit-btn svg {
+  stroke: #111111; /* Dark color for the arrow in dark mode */
+  transition: stroke 0.3s ease;
+}
+
+.dark .submit-btn:disabled svg {
+  stroke: #9CA3AF; /* Lighter gray for disabled state */
+}
+
+.dark .suggested-topic-card {
+    background-color: #1e1e1e !important;
+}

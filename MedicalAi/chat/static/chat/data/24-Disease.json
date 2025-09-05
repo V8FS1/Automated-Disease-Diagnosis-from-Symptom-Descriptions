@@ -1,0 +1,194 @@
+[
+ {
+  "name": "Acne",
+  "description": "Acne is a skin condition where hair follicles become clogged with oil and dead skin cells, leading to pimples, blackheads, or whiteheads. It commonly appears on the face, chest, back, and shoulders.",
+  "homeCare": "Wash your face twice daily with a gentle cleanser.\n\nAvoid scrubbing or picking at pimples.\n\nUse oil-free, non-comedogenic skincare products.\n\nKeep hair clean and away from the face.",
+  "medications": "Benzoyl Peroxide: Apply a thin layer once or twice daily.\n\nSide Effects: Dryness, redness, peeling.\n\nSalicylic Acid: Use as directed on the product label.\n\nSide Effects: Mild stinging or skin irritation.\n\nTopical Retinoids (e.g., Tretinoin, Adapalene): Apply once daily at night.\n\nSide Effects: Dryness, redness, increased sensitivity to sunlight.\n\nOral Antibiotics (e.g., Doxycycline, Minocycline): Take as prescribed by your doctor.\n\nSide Effects: Stomach upset, increased sun sensitivity.\n\nIsotretinoin: Prescribed by a dermatologist; requires close monitoring.\n\nSide Effects: Dry skin, birth defects if taken during pregnancy, mood changes.",
+  "lifestyle": "Maintain a balanced diet rich in fruits and vegetables.\n\nStay hydrated by drinking plenty of water.\n\nManage stress through relaxation techniques like meditation or yoga.\n\nEnsure adequate sleep to support skin health.",
+  "whenToSeeDoctor": "If over-the-counter treatments aren't effective after several weeks.\n\nIf acne is severe, painful, or causing emotional distress.\n\nIf you develop nodules or cysts"
+ },
+ {
+  "name": "Arthritis",
+  "description": "Arthritis refers to inflammation of one or more joints, causing pain and stiffness that can worsen with age. The most common types are osteoarthritis and rheumatoid arthritis.",
+  "homeCare": "Apply warm or cold compresses to affected joints.\n\nEngage in gentle exercises like walking or swimming.\n\nMaintain a healthy weight to reduce joint stress.\n\nUse assistive devices to ease joint strain.",
+  "medications": "Acetaminophen: 500 mg every 4–6 hours as needed.\n\nSide Effects: Liver damage if overused.\n\nNSAIDs (e.g., Ibuprofen): 400–800 mg every 6–8 hours.\n\nSide Effects: Stomach upset, increased risk of bleeding.\n\nTopical Analgesics: Apply as directed to relieve localized pain.",
+  "lifestyle": "Incorporate anti-inflammatory foods like fruits and vegetables.\n\nPractice stress-reducing techniques such as meditation.\n\nEnsure adequate sleep to help manage pain.",
+  "whenToSeeDoctor": "If joint pain persists or worsens.\n\nIf you experience swelling, redness, or warmth around joints.\n\nIf over-the-counter medications don't provide relief."
+ },
+ {
+  "name": "Bronchial Asthma",
+  "description": "Asthma is a chronic condition where the airways narrow and swell, producing extra mucus, leading to difficulty in breathing, coughing, and wheezing.",
+  "homeCare": "Identify and avoid asthma triggers like smoke or pollen.\n\nUse a peak flow meter to monitor breathing.\n\nFollow an asthma action plan as prescribed.",
+  "medications": "Short-acting bronchodilators (e.g., Albuterol): 2 puffs every 4–6 hours as needed.\n\nSide Effects: Tremors, nervousness.\n\nInhaled corticosteroids (e.g., Fluticasone): 1–2 puffs daily.\n\nSide Effects: Hoarseness, oral thrush.",
+  "lifestyle": "Maintain a clean environment to reduce allergens.\n\nEngage in regular, moderate exercise.\n\nPractice breathing exercises to strengthen lungs.",
+  "whenToSeeDoctor": "If asthma symptoms become more frequent or severe.\n\nIf medications are less effective.\n\nIf you experience shortness of breath during minimal activity."
+ },
+ {
+  "name": "Cervical Spondylosis",
+  "description": "Cervical spondylosis is age-related wear and tear affecting the spinal disks in your neck, leading to neck pain and stiffness.",
+  "homeCare": "Apply heat or cold packs to the neck.\n\nPerform neck exercises to maintain flexibility.\n\nMaintain good posture.",
+  "medications": "NSAIDs (e.g., Ibuprofen): 400–800 mg every 6–8 hours.\n\nSide Effects: Stomach upset, increased risk of bleeding.\n\nMuscle relaxants (e.g., Cyclobenzaprine): 5–10 mg three times daily.\n\nSide Effects: Drowsiness, dry mouth.",
+  "lifestyle": "Use ergonomic furniture.\n\nAvoid activities that strain the neck.\n\nIncorporate neck-strengthening exercises.",
+  "whenToSeeDoctor": "If neck pain persists or worsens.\n\nIf you experience numbness or weakness in limbs.\n\nIf pain interferes with daily activities."
+ },
+ {
+  "name": "Chicken pox",
+  "description": "Chickenpox is a contagious viral infection causing an itchy rash and red spots or blisters all over the body.\n",
+  "homeCare": "Keep skin clean and dry.\n\nUse calamine lotion to soothe itching.\n\nTrim fingernails to prevent skin infections from scratching.",
+  "medications": "Antihistamines (e.g., Diphenhydramine): 25–50 mg every 6–8 hours.\n\nSide Effects: Drowsiness, dry mouth.\n\nAcetaminophen: 500 mg every 4–6 hours for fever.\n\nSide Effects: Liver damage if overused.",
+  "lifestyle": "Stay hydrated.\n\nRest adequately.\n\nAvoid contact with others to prevent spreading.",
+  "whenToSeeDoctor": "If the rash spreads to the eyes.\n\nIf you experience dizziness, shortness of breath, or vomiting.\n\nIf the blisters become infected."
+ },
+ {
+  "name": "Common Cold",
+  "description": "The common cold is a viral infection of the upper respiratory tract, primarily affecting the nose and throat. It's usually harmless, with symptoms resolving within a week or two.",
+  "homeCare": "Rest and stay hydrated.\n\nUse saline nasal sprays to relieve congestion.\n\nGargle with warm salt water to soothe a sore throat.\n\nUse a humidifier to keep air moist.",
+  "medications": "Acetaminophen: 500 mg every 4–6 hours for fever and aches.\n\nSide Effects: Liver damage if overused.\n\nDecongestants (e.g., Pseudoephedrine): As directed for nasal congestion.\n\nSide Effects: Insomnia, increased blood pressure.",
+  "lifestyle": "Wash hands frequently to prevent spread.\n\nAvoid close contact with sick individuals.\n\nMaintain a healthy diet to support the immune system.",
+  "whenToSeeDoctor": "If symptoms last more than 10 days.\n\nIf you experience high fever or shortness of breath.\n\nIf symptoms worsen after initial improvement."
+ },
+ {
+  "name": "Dengue",
+  "description": "Dengue is a mosquito-borne viral infection causing flu-like symptoms, including high fever, severe headaches, and joint pain. Severe cases can lead to bleeding and low platelet counts.",
+  "homeCare": "Rest and stay hydrated.\n\nUse mosquito nets and repellents to prevent bites.\n\nMonitor for warning signs like bleeding or persistent vomiting.",
+  "medications": "Acetaminophen: 500 mg every 4–6 hours for fever and pain.\n\nSide Effects: Liver damage if overused.\n\nAvoid NSAIDs like ibuprofen and aspirin due to bleeding risk.",
+  "lifestyle": "Eliminate standing water to reduce mosquito breeding.\n\nWear long-sleeved clothing.\n\nStay indoors during peak mosquito hours.",
+  "whenToSeeDoctor": "If you experience severe abdominal pain, bleeding, or difficulty breathing.\n\nIf symptoms worsen after initial improvement.\n\nIf you have underlying health conditions."
+ },
+ {
+  "name": "Dimorphic Hemorrhoids",
+  "description": "Hemorrhoids are swollen veins in the lower rectum or anus, causing discomfort, itching, and bleeding. They can be internal or external.",
+  "homeCare": "Take warm sitz baths several times a day.\n\nUse over-the-counter hemorrhoid creams.\n\nAvoid straining during bowel movements.",
+  "medications": "Topical Hydrocortisone: Apply as directed to reduce inflammation.\n\nSide Effects: Skin thinning with prolonged use.\n\nStool Softeners (e.g., Docusate Sodium): 100 mg once or twice daily.\n\nSide Effects: Stomach cramps, diarrhea.",
+  "lifestyle": "Increase fiber intake through diet or supplements.\n\nStay hydrated.\n\nExercise regularly to prevent constipation.",
+  "whenToSeeDoctor": "If bleeding persists.\n\nIf hemorrhoids become very painful or don't improve with home treatment.\n\nIf you notice a lump near the anus that doesn't go away."
+ },
+ {
+  "name": "Fungal Infection",
+  "description": "Fungal infections can affect various parts of the body, including the skin, nails, and mucous membranes, leading to symptoms like itching, redness, and scaling.",
+  "homeCare": "Keep the affected area clean and dry.\n\nAvoid sharing personal items like towels.\n\nWear breathable clothing.",
+  "medications": "Topical Antifungals (e.g., Clotrimazole): Apply twice daily.\n\nSide Effects: Skin irritation.\n\nOral Antifungals (e.g., Fluconazole): 150 mg once weekly for 2–4 weeks.\n\nSide Effects: Liver toxicity, gastrointestinal upset.",
+  "lifestyle": "Change socks and underwear daily.\n\nUse antifungal powders if prone to infections.\n\nMaintain good hygiene.",
+  "whenToSeeDoctor": "If the infection doesn't improve with over-the-counter treatments.\n\nIf the infection spreads or becomes more severe.\n\nIf you have a weakened immune system."
+ },
+ {
+  "name": "Hypertension",
+  "description": "Hypertension, or high blood pressure, is a condition where the force of the blood against artery walls is consistently too high, potentially leading to heart disease and stroke.",
+  "homeCare": "Monitor blood pressure regularly.\n\nReduce sodium intake.\n\nLimit alcohol consumption",
+  "medications": "ACE Inhibitors (e.g., Lisinopril): 10–40 mg once daily.\n\nSide Effects: Cough, elevated blood potassium levels.\n\nBeta-Blockers (e.g., Metoprolol): 50–100 mg twice daily.\n\nSide Effects: Fatigue, cold hands.",
+  "lifestyle": "Engage in regular physical activity.\n\nMaintain a healthy weight.\n\nManage stress through relaxation techniques.",
+  "whenToSeeDoctor": "If blood pressure readings consistently exceed 130\/80 mmHg.\n\nIf you experience symptoms like headaches, chest pain, or vision changes.\n\nIf you have other risk factors like diabetes or kidney disease."
+ },
+ {
+  "name": "Migraine",
+  "description": "A migraine is a neurological condition characterized by intense, throbbing headaches, often on one side of the head. It may be accompanied by nausea, vomiting, and sensitivity to light and sound.",
+  "homeCare": "Rest in a quiet, dark room.\n\nApply a cold compress to the forehead.\n\nPractice relaxation techniques like deep breathing or meditation.",
+  "medications": "Over-the-counter pain relievers (e.g., Ibuprofen): 200–400 mg every 4–6 hours.\n\nSide Effects: Stomach upset, dizziness.\n\nTriptans (e.g., Sumatriptan): 50–100 mg at onset of migraine.\n\nSide Effects: Tingling, flushing, drowsiness.",
+  "lifestyle": "Maintain a regular sleep schedule.\n\nStay hydrated and avoid skipping meals.\n\nIdentify and avoid migraine triggers.",
+  "whenToSeeDoctor": "If migraines are frequent or severe.\n\nIf over-the-counter medications are ineffective.\n\nIf migraines are accompanied by neurological symptoms."
+ },
+ {
+  "name": "Pneumonia",
+  "description": "Pneumonia is an infection that inflames the air sacs in one or both lungs, which may fill with fluid, causing cough, fever, and difficulty breathing.",
+  "homeCare": "Get plenty of rest.\n\nStay hydrated.\n\nUse a humidifier to ease breathing.",
+  "medications": "Antibiotics (for bacterial pneumonia): As prescribed by a doctor.\n\nSide Effects: Nausea, diarrhea.\n\nOver-the-counter pain relievers (e.g., Acetaminophen): 500 mg every 4–6 hours.\n\nSide Effects: Liver damage if overused.",
+  "lifestyle": "Avoid smoking and exposure to pollutants.\n\nPractice good hygiene to prevent infection.\n\nGet vaccinated against pneumonia and influenza.",
+  "whenToSeeDoctor": "If experiencing high fever, chest pain, or persistent cough.\n\nIf breathing becomes difficult.\n\nIf symptoms worsen despite home care."
+ },
+ {
+  "name": "Psoriasis",
+  "description": "Psoriasis is a chronic autoimmune condition that causes rapid skin cell turnover, leading to thick, red, scaly patches on the skin.",
+  "homeCare": "Keep skin moisturized.\n\nTake regular baths with bath oils or oatmeal.\n\nAvoid triggers like stress and skin injuries.",
+  "medications": "Topical corticosteroids: Apply as directed to reduce inflammation.\n\nSide Effects: Skin thinning with prolonged use.\n\nVitamin D analogs (e.g., Calcipotriene): Apply as prescribed.\n\nSide Effects: Skin irritation.",
+  "lifestyle": "Maintain a healthy diet and weight.\n\nLimit alcohol consumption.\n\nManage stress through relaxation techniques.",
+  "whenToSeeDoctor": "If psoriasis covers large areas of the body.\n\nIf experiencing joint pain or stiffness.\n\nIf over-the-counter treatments are ineffective."
+ },
+ {
+  "name": "Typhoid",
+  "description": "Typhoid fever is a bacterial infection caused by Salmonella typhi, leading to high fever, weakness, stomach pain, and loss of appetite.",
+  "homeCare": "Ensure adequate rest.\n\nStay hydrated with clean fluids.\n\nMaintain good personal hygiene.",
+  "medications": "Antibiotics (e.g., Ciprofloxacin): As prescribed by a doctor.\n\nSide Effects: Nausea, diarrhea.\n\nAntipyretics (e.g., Paracetamol): 500 mg every 4–6 hours for fever.\n\nSide Effects: Liver damage if overused.",
+  "lifestyle": "Eat a nutritious, easily digestible diet.\n\nAvoid raw or undercooked foods.\n\nPractice safe food and water consumption.",
+  "whenToSeeDoctor": "If experiencing high fever or severe abdominal pain.\n\nIf symptoms persist or worsen.\n\nIf there's a history of exposure to contaminated food or water."
+ },
+ {
+  "name": "Varicose Veins",
+  "description": "Varicose veins are enlarged, twisted veins commonly appearing in the legs due to weakened valves and veins.",
+  "homeCare": "Elevate legs when resting.\n\nWear compression stockings.\n\nAvoid prolonged standing or sitting.",
+  "medications": "Topical creams (e.g., Horse chestnut extract): Apply as directed to reduce swelling.\n\nSide Effects: Skin irritation.\n\nPain relievers (e.g., Ibuprofen): 200–400 mg every 4–6 hours.\n\nSide Effects: Stomach upset, dizziness.",
+  "lifestyle": "Engage in regular physical activity.\n\nMaintain a healthy weight.\n\nAvoid tight clothing that restricts blood flow.",
+  "whenToSeeDoctor": "If varicose veins cause pain or discomfort.\n\nIf skin ulcers or sores develop near the veins.\n\nIf there's swelling or redness in the legs."
+ },
+ {
+  "name": "Allergy",
+  "description": "An allergy is an immune system response to a foreign substance that's not typically harmful to your body, such as pollen, pet dander, or certain foods.",
+  "homeCare": "Avoid known allergens.\n\nKeep windows closed during high pollen seasons.\n\nUse air purifiers to reduce indoor allergens.",
+  "medications": "Antihistamines (e.g., Loratadine): 10 mg once daily.\n\nSide Effects: Drowsiness, dry mouth.\n\nNasal corticosteroids (e.g., Fluticasone): 1–2 sprays in each nostril daily.\n\nSide Effects: Nasal irritation, nosebleeds.",
+  "lifestyle": "Shower and change clothes after outdoor activities.\n\nRegularly clean bedding and vacuum carpets.\n\nMonitor pollen forecasts and limit outdoor exposure when counts are high.",
+  "whenToSeeDoctor": "If allergy symptoms interfere with daily activities.\n\nIf over-the-counter medications are ineffective.\n\nIf experiencing severe reactions like difficulty breathing."
+ },
+ {
+  "name": "Diabetes",
+  "description": "Diabetes is a chronic condition that affects how your body turns food into energy, leading to high blood sugar levels.",
+  "homeCare": "Monitor blood sugar levels regularly.\n\nFollow a balanced diet rich in fiber and low in sugar.\n\nEngage in regular physical activity.",
+  "medications": "Metformin: 500–1000 mg twice daily.\n\nSide Effects: Nausea, diarrhea.\n\nInsulin therapy: Dosage as prescribed by a doctor.\n\nSide Effects: Low blood sugar, weight gain.",
+  "lifestyle": "Maintain a healthy weight.\n\nAvoid smoking and limit alcohol consumption.\n\nManage stress through relaxation techniques.",
+  "whenToSeeDoctor": "If experiencing symptoms like frequent urination, excessive thirst, or unexplained weight loss.\n\nIf blood sugar levels are consistently high or low.\n\nIf experiencing complications like vision problems or numbness in extremities."
+ },
+ {
+  "name": "Drug Reaction",
+  "description": "A drug reaction occurs when the body responds adversely to a medication. Reactions can range from mild rashes to severe conditions like anaphylaxis. ",
+  "homeCare": "Stop taking the suspected medication immediately.\n\nApply cool compresses to alleviate skin reactions.\n\nUse over-the-counter antihistamines for mild symptoms.",
+  "medications": "Antihistamines (e.g., Diphenhydramine): 25–50 mg every 4–6 hours.\n\nSide Effects: Drowsiness, dry mouth.\n\nCorticosteroids (e.g., Prednisone): Dosage as prescribed by a doctor.\n\nSide Effects: Weight gain, mood swings.",
+  "lifestyle": "Wear medical alert identification.\n\nInform healthcare providers about known drug allergies.\n\nKeep a list of medications that have caused reactions.",
+  "whenToSeeDoctor": "If experiencing difficulty breathing or swelling of the face and throat.\n\nIf symptoms worsen or new symptoms appear.\n\nIf over-the-counter treatments are ineffective."
+ },
+ {
+  "name": "Gastroesophageal Reflux Disease",
+  "description": "GERD is a chronic condition where stomach acid flows back into the esophagus, causing heartburn and other symptoms.",
+  "homeCare": "Eat smaller meals and avoid eating before bedtime.\n\nElevate the head of the bed.\n\nAvoid trigger foods like spicy or fatty foods.",
+  "medications": "Antacids (e.g., Tums): Take as needed for symptom relief.\n\nSide Effects: Constipation or diarrhea.\n\nProton Pump Inhibitors (e.g., Omeprazole): 20 mg once daily.\n\nSide Effects: Headache, nausea.",
+  "lifestyle": "Maintain a healthy weight.\n\nAvoid smoking and alcohol.\n\nWear loose-fitting clothing.",
+  "whenToSeeDoctor": "If experiencing chest pain or difficulty swallowing.\n\nIf symptoms persist despite treatment.\n\nIf over-the-counter medications are needed more than twice a week."
+ },
+ {
+  "name": "Peptic Ulcer Disease",
+  "description": "Peptic ulcers are open sores that develop on the lining of the stomach, upper small intestine, or esophagus, often due to H. pylori infection or long-term use of NSAIDs.",
+  "homeCare": "Avoid NSAIDs and alcohol.\n\nEat a balanced diet and avoid spicy foods.\n\nManage stress through relaxation techniques.",
+  "medications": "Proton Pump Inhibitors (e.g., Omeprazole): 20–40 mg once daily.\n\nSide Effects: Headache, diarrhea.\n\nAntibiotics (e.g., Amoxicillin): As prescribed for H. pylori infection.\n\nSide Effects: Nausea, allergic reactions.",
+  "lifestyle": "Quit smoking.\n\nLimit caffeine intake.\n\nEat meals at regular intervals.",
+  "whenToSeeDoctor": "If experiencing severe abdominal pain.\n\nIf vomiting blood or having black stools.\n\nIf symptoms persist despite treatment."
+ },
+ {
+  "name": "Urinary Tract Infection",
+  "description": "A UTI is an infection in any part of the urinary system, commonly the bladder and urethra, causing symptoms like a strong urge to urinate and a burning sensation during urination.",
+  "homeCare": "Drink plenty of water to flush out bacteria.\n\nAvoid irritants like caffeine and alcohol.\n\nUse a heating pad to alleviate discomfort.",
+  "medications": "Antibiotics (e.g., Nitrofurantoin): As prescribed by a doctor.\n\nSide Effects: Nausea, headache.\n\nPain relievers (e.g., Phenazopyridine): As directed for urinary pain.\n\nSide Effects: Orange-colored urine, dizziness.",
+  "lifestyle": "Urinate frequently and after sexual activity.\n\nWipe from front to back after using the toilet.\n\nWear breathable cotton underwear.",
+  "whenToSeeDoctor": "If experiencing fever, chills, or back pain.\n\nIf symptoms persist or worsen.\n\nIf UTIs occur frequently."
+ },
+ {
+  "name": "Impetigo",
+  "description": "Impetigo is a highly contagious bacterial skin infection, most common in young children but can affect people of any age. It causes red sores that quickly rupture, ooze for a few days, and then form a yellowish-brown crust. The infection often occurs around the nose and mouth but can spread to other areas of the body through touch, clothing, or towels.",
+  "homeCare": "Gently wash the affected areas with warm water and mild soap.\n\nAvoid scratching or touching the sores to prevent spreading.\n\nKeep fingernails short and clean.\n\nWash hands frequently and maintain good hygiene.\n\nDo not share personal items like towels, clothing, or bedding.",
+  "medications": "Topical Antibiotics:\n\nMupirocin (Bactroban): Apply a thin layer to the affected area three times daily for 5–10 days.\n\nSide Effects: Skin irritation, itching, burning sensation.\n\nRetapamulin (Altabax): Apply twice daily for 5 days.\n\nSide Effects: Redness, itching at the application site.\n\nOral Antibiotics (for extensive or resistant cases):\n\nCephalexin: 250–500 mg every 6 hours for 7 days.\n\nSide Effects: Nausea, diarrhea, allergic reactions.\n\nDicloxacillin: 250–500 mg every 6 hours for 7 days.\n\nSide Effects: Upset stomach, rash, yeast infections.",
+  "lifestyle": "Maintain good personal hygiene.\n\nWash clothes, towels, and bedding regularly in hot water.\n\nAvoid close contact with others until the infection has healed or after 24–48 hours of antibiotic treatment.\n\nClean and cover any cuts or abrasions promptly.",
+  "whenToSeeDoctor": "If sores are spreading rapidly or not improving with home care.\n\nIf you develop a fever or swollen lymph nodes.\n\nIf the infection recurs frequently."
+ },
+ {
+  "name": "Jaundice",
+  "description": "Jaundice is a condition characterized by yellowing of the skin and the whites of the eyes due to elevated levels of bilirubin in the blood. It is often a sign of underlying issues with the liver, gallbladder, or pancreas, such as hepatitis, gallstones, or liver disease.",
+  "homeCare": "Increase fluid intake to help flush out toxins.\n\nConsume a balanced diet rich in fruits and vegetables.\n\nAvoid alcohol and substances that can harm the liver.\n\nRest adequately to support the body's healing processes.",
+  "medications": "For Hepatitis-Induced Jaundice:\n\nAntiviral Medications: As prescribed by a healthcare provider.\n\nSide Effects: Vary depending on the specific medication.\n\nFor Bile Duct Obstruction:\n\nSurgical Intervention or Endoscopic Procedures: To remove blockages.\n\nFor Hemolytic Anemia:\n\nCorticosteroids: Dosage as directed by a doctor.\n\nSide Effects: Weight gain, mood swings, increased blood sugar.",
+  "lifestyle": "Maintain a healthy weight through diet and exercise.\n\nAvoid medications and substances that can damage the liver.\n\nRegularly monitor liver function if at risk.\n\nGet vaccinated against hepatitis A and B.",
+  "whenToSeeDoctor": "If you notice yellowing of the skin or eyes.\n\nIf you experience dark urine, pale stools, or abdominal pain.\n\nIf you have unexplained weight loss or fatigue.\n\nIf you have a history of liver disease or are at risk."
+ },
+ {
+  "name": "Malaria",
+  "description": "Malaria is a serious and sometimes fatal disease caused by a parasite transmitted through the bites of infected mosquitoes. It is prevalent in tropical and subtropical regions. Symptoms include high fever, chills, sweating, headaches, nausea, vomiting, and muscle pain.",
+  "homeCare": "Rest and stay hydrated to help your body fight the infection.\n\nUse antipyretics like acetaminophen to reduce fever (as directed).\n\nAvoid strenuous activities until fully recovered.",
+  "medications": "First-Line Treatments:\n\nArtemisinin-based Combination Therapies (ACTs): Dosage depends on specific medication and patient factors.\n\nSide Effects: Nausea, dizziness, loss of appetite.\n\nOther Antimalarials:\n\nChloroquine: Dosage as prescribed, depending on resistance patterns.\n\nSide Effects: Blurred vision, itching, gastrointestinal discomfort.\n\nMefloquine: Dosage as directed by a healthcare provider.\n\nSide Effects: Sleep disturbances, mood changes, dizziness.",
+  "lifestyle": "Use insect repellent and sleep under mosquito nets in endemic areas.\n\nWear protective clothing to reduce mosquito bites.\n\nTake prescribed prophylactic antimalarial medications when traveling to high-risk areas.\n\nStay indoors during peak mosquito activity times (dusk and dawn).",
+  "whenToSeeDoctor": "If you develop a high fever after visiting or living in a malaria-endemic area.\n\nIf you experience symptoms like chills, sweating, and muscle aches.\n\nIf symptoms worsen or do not improve with initial treatment."
+ }
+]

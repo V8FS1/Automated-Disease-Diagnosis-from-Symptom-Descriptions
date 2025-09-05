@@ -1,0 +1,58 @@
+[
+    {
+      "title": "What kind of cough should make me see a doctor?",
+      "abstract": "While occasional coughing is common, a cough that persists for more than three weeks, produces discolored or bloody mucus, or is accompanied by symptoms like shortness of breath, chest pain, or fever may indicate a more serious condition. Such symptoms could be signs of infections or chronic lung diseases.",
+      "detailed": "A cough is considered 'acute' if it lasts less than three weeks and 'chronic' if it persists longer. Chronic coughs may result from conditions like asthma, chronic bronchitis, or gastroesophageal reflux disease (GERD). If your cough is accompanied by thick, green or yellow phlegm, wheezing, high fever, or if you're coughing up blood, it's important to consult a healthcare provider. Additionally, if the cough interferes with sleep or daily activities, medical evaluation is advised.",
+      "sources": [
+        {
+          "name": "Mayo Clinic",
+          "url": "https://www.mayoclinic.org/symptoms/cough/basics/when-to-see-doctor/sym-20050846"
+        }
+      ]
+    },
+    {
+      "title": "When is a fever considered serious in adults?",
+      "abstract": "A fever is typically a sign of the body's response to infection. However, in adults, a temperature exceeding 38.9°C (102°F) that lasts more than two days, or is accompanied by symptoms like rash, confusion, or difficulty breathing, warrants medical attention.",
+      "detailed": "Fevers above 39.4°C (103°F) or those persisting beyond three days should be evaluated by a healthcare provider. Accompanying symptoms such as severe headache, skin rash, sensitivity to light, stiff neck, or mental confusion can indicate serious conditions like meningitis or other infections. Individuals with compromised immune systems or chronic illnesses should be particularly cautious and seek prompt medical care when experiencing high or prolonged fevers.",
+      "sources": [
+        {
+          "name": "Mayo Clinic",
+          "url": "https://www.mayoclinic.org/diseases-conditions/fever/symptoms-causes/syc-20352759"
+        },
+        {
+          "name": "NHS",
+          "url": "https://www.nhs.uk/conditions/fever-in-adults/"
+        }
+      ]
+    },
+    {
+      "title": "How do I know if my stomach pain needs medical attention?",
+      "abstract": "Stomach pain is common and often resolves without treatment. However, if the pain is severe, persistent, or accompanied by symptoms like fever, vomiting, or changes in bowel habits, it may indicate a more serious condition requiring medical evaluation.",
+      "detailed": "Seek immediate medical attention if you experience sudden, severe abdominal pain, especially if it's localized to a specific area, such as the lower right abdomen (which could indicate appendicitis). Other warning signs include pain accompanied by fever, persistent vomiting, blood in stools or vomit, unintentional weight loss, or difficulty breathing. Conditions like peptic ulcers, gallstones, or urinary tract infections can present with abdominal pain and necessitate prompt diagnosis and treatment.",
+      "sources": [
+        {
+          "name": "Mayo Clinic",
+          "url": "https://www.mayoclinic.org/symptoms/abdominal-pain/basics/when-to-see-doctor/sym-20050728"
+        },
+        {
+          "name": "NHS",
+          "url": "https://www.nhs.uk/conditions/stomach-ache/"
+        }
+      ]
+    },
+    {
+      "title": "When does a skin rash mean something more serious?",
+      "abstract": "While many skin rashes are benign and resolve on their own, certain rashes accompanied by symptoms like fever, pain, or rapid spreading may signal a more serious underlying condition and require medical assessment.",
+      "detailed": "Consult a healthcare provider if you develop a rash that is widespread, rapidly spreading, or accompanied by systemic symptoms such as fever, joint pain, or swelling. Rashes resulting from allergic reactions, infections like impetigo or chickenpox, or autoimmune conditions like psoriasis may present with these features. Early evaluation and treatment can prevent complications and aid in effective management.",
+      "sources": [
+        {
+          "name": "Mayo Clinic",
+          "url": "https://www.mayoclinic.org/diseases-conditions/dermatitis-eczema/symptoms-causes/syc-20352380"
+        },
+        {
+          "name": "NHS",
+          "url": "https://www.nhs.uk/conditions/itchy-skin/"
+        }
+      ]
+    }
+  ]
