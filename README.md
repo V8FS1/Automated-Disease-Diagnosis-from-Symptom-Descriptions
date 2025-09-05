@@ -14,7 +14,7 @@ The system is deployed in a **web interface**, making it accessible for **teleme
 
 ---
 
-## 🚀 Features
+##  Features
 - 📝 **Free-text symptom input** → handles unstructured, natural patient descriptions.  
 - 🤖 **Transformer-based classification** → fine-tuned BERT, BioBERT, ClinicalBERT, PubMedBERT, and RoBERTa models.  
 - 🔍 **NER-enhanced predictions** → integrates biomedical entities for improved robustness.  
@@ -26,30 +26,31 @@ The system is deployed in a **web interface**, making it accessible for **teleme
 ## 🛠️ Tech Stack
 - **Programming**: Python  
 - **Libraries/Frameworks**: Hugging Face Transformers, TensorFlow, Scikit-learn, SpaCy, SciSpacy, Pandas, NumPy  
-- **Models**: BERT, ClinicalBERT, BioBERT, PubMedBERT, RoBERTa  
-- **Deployment**: Flask/Django + Web Interface  
+- **Models**: BERT-base, ClinicalBERT, BioBERT, PubMedBERT, RoBERTa, Logistic Regression, Random Forest, BiomedBERT  
+- **Deployment**: Django + Web Interface  
 - **Version Control**: Git/GitHub  
 
 ---
 
 ## 📄 Understanding 24-Disease.json
 The file 24-Disease.json contains detailed information for each of the 24 diseases the model can predict. It includes:
-    - name → Disease name (e.g., “Acne”, “Diabetes”).
-    - description → A brief overview of the disease.
-    - homeCare → Self-care and home remedies.
-    - medications → Recommended medications and their common side effects.
-    - lifestyle → Lifestyle tips to manage or prevent the disease.
-    - whenToSeeDoctor → Guidelines on when to seek professional medical attention.
-The web interface uses this JSON file to display detailed disease information after a prediction. This allows the system to not only identify the disease but also provide educational and actionable guidance for users.
+- name → Disease name (e.g., “Acne”, “Fungal infection”).
+- description → A brief overview of the disease.
+- homeCare → Self-care and home remedies.
+- medications → Recommended medications and their common side effects.
+- lifestyle → Lifestyle tips to manage or prevent the disease.
+- whenToSeeDoctor → Guidelines on when to seek professional medical attention.
+  
+#### The web interface uses this JSON file to display detailed disease information after a prediction. This allows the system to not only identify the disease but also provide educational and actionable guidance for users.
 ---
 
 ## 📂 Project Structure
 ```bash
-├── data/                # Dataset (Symptom2Disease )  
-├── MedicalAi/             # Web Deployment files 
-├── model/              # Fine-tuned transformer models  
+├── data/               # Dataset (Symptom2Disease )  
+├── MedicalAi/          # Web Deployment files
 ├── MedicalAi/requirements.txt     # Dependencies  
-├── README.md            # Project documentation  
+├── model/              # Fine-tuned transformer models  
+├── README.md           # Project documentation  
 ```
 
 ---
