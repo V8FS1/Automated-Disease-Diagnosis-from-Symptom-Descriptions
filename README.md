@@ -32,11 +32,22 @@ The system is deployed in a **web interface**, making it accessible for **teleme
 
 ---
 
+## 📄 Understanding 24-Disease.json
+The file 24-Disease.json contains detailed information for each of the 24 diseases the model can predict. It includes:
+    • name → Disease name (e.g., “Acne”, “Diabetes”).
+    • description → A brief overview of the disease.
+    • homeCare → Self-care and home remedies.
+    • medications → Recommended medications and their common side effects.
+    • lifestyle → Lifestyle tips to manage or prevent the disease.
+    • whenToSeeDoctor → Guidelines on when to seek professional medical attention.
+The web interface uses this JSON file to display detailed disease information after a prediction. This allows the system to not only identify the disease but also provide educational and actionable guidance for users.
+---
+
 ## 📂 Project Structure
 ```bash
 ├── data/                # Dataset (Symptom2Disease )  
-├── model/              # Fine-tuned transformer models  
 ├── MedicalAi/             # Web Deployment files 
+├── model/              # Fine-tuned transformer models  
 ├── MedicalAi/requirements.txt     # Dependencies  
 ├── README.md            # Project documentation  
 ```
@@ -72,15 +83,29 @@ The system is deployed in a **web interface**, making it accessible for **teleme
    pip install -r requirements.txt
 
    ```
-3) Database Setup
+3. Database Setup
    ```bash
    python manage.py migrate
    ```
-3. Launch the Development Server:
+4. Launch the Development Server:
    ```bash
    python manage.py runserver
    ```
 
+---
+
+## ⚙️ Using the AI Model
+To use the disease prediction AI, you must download the pre-trained model files because they are not included directly in the repository (due to their large size).
+
+### Steps to Download the Model
+1. The project includes a Python script called download_model.py.
+2. Run the script from your project root:
+   ```bash
+   python download_model.py
+   ```
+3. This will automatically download the required model files from Google Drive and place them in the appropriate folder (model/).
+4. After downloading, the AI system is ready to use with the symptom input interface.
+   
 ---
 
 ## 📊 Results For best Models
