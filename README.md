@@ -1,4 +1,4 @@
-# 🩺 Automated Disease Diagnosis from Symptom Descriptions Using NLP Techniques
+# 🩺 Automated Disease Diagnosis from Symptom Descriptions
 
 ## 📌 Project Overview
 This project presents an **AI-powered system for predicting diseases** from **free-text, patient-style symptom descriptions** using advanced **Natural Language Processing (NLP)** techniques.  
@@ -34,11 +34,10 @@ The system is deployed in a **web interface**, making it accessible for **teleme
 
 ## 📂 Project Structure
 ```bash
-├── data/                # Dataset (Symptom2Disease + augmented samples)  
-├── notebooks/           # Jupyter notebooks for preprocessing, modeling, evaluation  
-├── models/              # Fine-tuned transformer models  
-├── web_app/             # Deployment files (Flask/Django app)  
-├── requirements.txt     # Dependencies  
+├── data/                # Dataset (Symptom2Disease )  
+├── model/              # Fine-tuned transformer models  
+├── MedicalAi/             # Web Deployment files 
+├── MedicalAi/requirements.txt     # Dependencies  
 ├── README.md            # Project documentation  
 ```
 
@@ -49,38 +48,49 @@ The system is deployed in a **web interface**, making it accessible for **teleme
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/V8FS1/Multi-Disease-Prediction-System.git
-   cd Multi-Disease-Prediction-System
+   git clone https://github.com/V8FS1/Automated-Disease-Diagnosis-from-Symptom-Descriptions.git
+   cd Automated-Disease-Diagnosis-from-Symptom-Descriptions
    ```
 
-2. Create a virtual environment and install dependencies:
+2. Create a virtual environment and install dependencies
+Option A — Python venv (recommended)
 
+macOS / Linux
    ```bash
+   # from the project root
+   python3 -m venv .venv
+   source .venv/bin/activate
+   python -m pip install --upgrade pip
    pip install -r requirements.txt
    ```
+Windows (PowerShell)
+ ```bash
+   # from the project root
+   python -m venv .venv
+   .venv\Scripts\Activate
+   python -m pip install --upgrade pip
+   pip install -r requirements.txt
 
-3. Run preprocessing and model training (optional):
-
-   ```bash
-   python train_model.py
    ```
-
-4. Launch the web app:
+3) Database Setup
+ ```bash
+python manage.py migrate
+ ```
+3. Launch the Development Server:
 
    ```bash
-   python app.py
+   python manage.py runserver
    ```
 
 ---
 
-## 📊 Results
+## 📊 Results For best Models
 
-| Model                        | Validation Accuracy | Test Accuracy | Real-World Top-1 | Real-World Top-3 |
-| ---------------------------- | ------------------- | ------------- | ---------------- | ---------------- |
-| Logistic Regression (TF-IDF) | 96%                 | 98%           | 33%              | 50%              |
-| ClinicalBERT + NER           | 91.7%               | 90.3%         | 100%             | 100%             |
-| BioMedBERT + NER             | 94.4%               | 90.4%         | 95.8%            | 95.8%            |
-| **RoBERTa + NER**            | **96.1%**           | **95.0%**     | **95.8%**        | **100%**         |
+| Model                        | Test Accuracy | Real-World Top-1 | Real-World Top-3 |
+| ---------------------------- | ------------- | ---------------- | ---------------- |
+| ClinicalBERT (Text + NER)    | 90.3%         | 87.50%           | 100%             |
+| BioMedBERT + NER             | 90.4%         | 89.58%           | 95.8%            |
+| **RoBERTa + NER**            | **95.0%**     | **95.8%**        | **100%**         |
 
 ---
 
@@ -107,6 +117,6 @@ The system is deployed in a **web interface**, making it accessible for **teleme
 **Faisal Salama**  
 B.Sc. Software Engineering | Üsküdar University  
 📧 Email: [faisalslamav8@gmail.com](mailto:faisalslamav8@gmail.com)  
-🔗 LinkedIn: [Your LinkedIn]  
+🔗 LinkedIn: www.linkedin.com/in/salamafaisal 
 💻 GitHub: [V8FS1](https://github.com/V8FS1)  
 
