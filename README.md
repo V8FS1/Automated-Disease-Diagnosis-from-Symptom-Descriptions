@@ -44,7 +44,7 @@ The system is deployed in a **web interface**, making it accessible for **teleme
 ```
 ---
 
-### 📓 Understanding `disease_ai_pipeline.ipynb` 
+### 📓 Understanding `Disease_Ai_Pipeline.ipynb` 
 
 The file `disease_ai_pipeline.ipynb` contains the **core training and evaluation workflow** for the AI disease prediction model. It documents each stage of the machine learning pipeline, making it easy to follow, reproduce, or extend the system.
 
