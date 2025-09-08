@@ -32,7 +32,33 @@ The system is deployed in a **web interface**, making it accessible for **teleme
 
 ---
 
-## 📄 Understanding 24-Disease.json
+## 📂 Project Structure
+```bash
+├── data/               # Dataset (Symptom2Disease )  
+├── MedicalAi/          # Web Deployment files
+├── MedicalAi/requirements.txt     # Dependencies  
+├── model/              # Fine-tuned transformer models
+├── 24-Disease          # detailed information about diseases
+├── disease_ai_pipeline.ipynb      # Ai Model
+├── README.md           # Project documentation  
+```
+---
+
+### 📓 Understanding `disease_ai_pipeline.ipynb` 
+
+The file `disease_ai_pipeline.ipynb` contains the **core training and evaluation workflow** for the AI disease prediction model. It documents each stage of the machine learning pipeline, making it easy to follow, reproduce, or extend the system.
+
+**Key steps covered in the notebook:**
+- **Data Preparation**: Load, inspect, clean, and structure the dataset for model training.  
+- **Named Entity Recognition (NER)**: Enhance the dataset with biomedical entities using SciSpaCy and transformer-based NER pipelines.  
+- **Model Pipeline (BERT & Variants)**: Tokenization, encoding, and fine-tuning transformer models such as BERT, BioBERT, ClinicalBERT, and RoBERTa.  
+- **Training Process**: Train/validation/test splits, training arguments, and loss/accuracy tracking.  
+- **Evaluation**: Evaluate models on test data, including accuracy, precision, recall, and F1 scores.  
+- **Model Saving**: Save trained models and tokenizers for deployment in the web interface.  
+
+👉 This notebook is the **heart of the AI system**, serving as both the development log and the reproducible workflow for generating disease prediction models.
+
+## 📄 24-Disease.json
 The file 24-Disease.json contains detailed information for each of the 24 diseases the model can predict. It includes:
 - name → Disease name (e.g., “Acne”, “Fungal infection”).
 - description → A brief overview of the disease.
@@ -42,17 +68,6 @@ The file 24-Disease.json contains detailed information for each of the 24 diseas
 - whenToSeeDoctor → Guidelines on when to seek professional medical attention.
   
 #### The web interface uses this JSON file to display detailed disease information after a prediction. This allows the system to not only identify the disease but also provide educational and actionable guidance for users.
----
-
-## 📂 Project Structure
-```bash
-├── data/               # Dataset (Symptom2Disease )  
-├── MedicalAi/          # Web Deployment files
-├── MedicalAi/requirements.txt     # Dependencies  
-├── model/              # Fine-tuned transformer models  
-├── README.md           # Project documentation  
-```
-
 ---
 
 ## ⚙️ Installation & Setup
